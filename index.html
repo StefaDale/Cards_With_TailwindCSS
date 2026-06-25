@@ -1,9 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cards | Tailwind CSS</title>
+
+    <meta name="description" content="Raccolta dei link principali">
+    <meta name="author" content="Stefano Catalin">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://StefaDale.github.io/Cards_With_TailwindCSS/">
+
+    <meta property="og:title" content="Cards | Tailwind CSS">
+    <meta property="og:description" content="Raccolta dei link principali">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/og-preview.svg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cards | Tailwind CSS">
+    <meta name="twitter:description" content="Raccolta dei link principali">
+    <meta name="twitter:image" content="assets/og-preview.svg">
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
         @keyframes fadeIn {
@@ -27,38 +44,44 @@
         .delay-3 { animation-delay: 0.6s; }
         .delay-4 { animation-delay: 0.8s; }
 
+        html {
+        min-height: 100%;
+        background: #d946ef;
+    }
+
 </style>
 </head>
-<body class="bg-[#52525b]">
+
+<body class="m-0 min-h-dvh bg-gradient-to-br from-violet-950 via-purple-700 to-fuchsia-400 flex flex-col overflow-x-hidden">
     <div>
-        <header class="flex flex-col justify-center items-center text-white p-5 md:text-5xl transition fade-in gap-2">
-            <h1>CARDS</h1>
-            <h3 class="md:text-xl">with Tailwind CSS Framework</h3>
+        <header class="mt-10 flex flex-col justify-center items-center text-white p-5 transition fade-in gap-3 text-center">
+            <h1 class="text-4xl md:text-6xl font-black tracking-wide">CARDS</h1>
+            <h3 class="text-base md:text-xl text-white/70">with Tailwind CSS Framework</h3>
         </header>
     </div>
-    <div class="grid grid-cols-2 items-center justify-items-center text-base gap-10 mt-20 md:grid-cols-2 md:text-2xl">
-        <div class="fade-in delay-1 shadow-xl/30 shadow-white w-full max-w-80 p-6 flex flex-col items-start justify-center border-2 border-white bg-blue-900 rounded-lg transition-colors hover:bg-blue-700 text-white md:p-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-items-center text-base gap-8 md:gap-10 flex-1 px-6 pb-10 md:text-2xl">
+        <div class="fade-in delay-1 shadow-[0_0_55px_rgba(255,255,255,0.9)] w-full max-w-80 min-h-44 p-6 flex flex-col items-start justify-center border border-white/40 bg-[#2d2856] rounded-lg transition duration-300 hover:-translate-y-1 hover:bg-[#3a3470] text-white md:p-8">
             <h2 class="text-2xl font-bold md:text-4xl">GitHub</h2>
-                <p>Repository</p>
-                <a class="text-fuchsia-700 hover:underline underline-offset-8 transition duration-[650ms] hover:decoration-white" href="https://github.com/StefaDale" target="_blank">Link</a>
+            <p class="mt-2 text-white/80">Repository</p>
+            <a class="mt-5 inline-block rounded-md bg-white px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-violet-100" href="https://github.com/StefaDale" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-        
-        <div class="fade-in delay-2 shadow-xl/30 shadow-white w-full max-w-80 p-6 flex flex-col items-start justify-center border-2 border-white bg-blue-700 rounded-xl transition-colors hover:bg-blue-500 text-white md:p-10">
+
+        <div class="fade-in delay-2 shadow-[0_0_55px_rgba(255,255,255,0.9)] w-full max-w-80 min-h-44 p-6 flex flex-col items-start justify-center border border-white/40 bg-[#2d2856] rounded-lg transition duration-300 hover:-translate-y-1 hover:bg-[#3a3470] text-white md:p-8">
             <h2 class="text-2xl font-bold md:text-4xl">Social</h2>
-            <p>LinkTree</p>
-            <a class="text-black hover:underline underline-offset-8 transition duration-[650ms] hover:decoration-white" href="https://stefanocatalinlinktree.netlify.app" target="_blank">Link</a>
+            <p class="mt-2 text-white/80">LinkTree</p>
+            <a class="mt-5 inline-block rounded-md bg-white px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-violet-100" href="https://stefanocatalinlinktree.netlify.app" target="_blank" rel="noopener noreferrer">LinkTree</a>
         </div>
 
-        <div class="fade-in delay-3 shadow-xl/30 shadow-white w-full max-w-80 p-6 flex flex-col items-start justify-center border-2 border-white bg-blue-500 rounded-2xl transition-colors hover:bg-blue-200 text-white hover:text-black md:p-10">
+        <div class="fade-in delay-3 shadow-[0_0_55px_rgba(255,255,255,0.9)] w-full max-w-80 min-h-44 p-6 flex flex-col items-start justify-center border border-white/40 bg-[#2d2856] rounded-lg transition duration-300 hover:-translate-y-1 hover:bg-[#3a3470] text-white md:p-8">
             <h2 class="text-2xl font-bold md:text-4xl">Sito Web</h2>
-            <p>Portfolio Personale</p>
-            <a class="text-amber-400 hover:underline underline-offset-8 transition duration-[650ms] hover:decoration-black" href="https://stefanocatalin.netlify.app" target="_blank">Link</a>
+            <p class="mt-2 text-white/80">Portfolio Personale</p>
+            <a class="mt-5 inline-block rounded-md bg-white px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-violet-100" href="https://stefanocatalin.netlify.app" target="_blank" rel="noopener noreferrer">Website</a>
         </div>
 
-        <div class="fade-in delay-4 shadow-xl/30 shadow-white w-full max-w-80 p-6 flex flex-col items-start justify-center border-2 border-white bg-blue-300 rounded-4xl transition-colors hover:bg-blue-50 text-zinc-600 hover:text-black md:p-10">
+        <div class="fade-in delay-4 shadow-[0_0_55px_rgba(255,255,255,0.9)] w-full max-w-80 min-h-44 p-6 flex flex-col items-start justify-center border border-white/40 bg-[#2d2856] rounded-lg transition duration-300 hover:-translate-y-1 hover:bg-[#3a3470] text-white md:p-8">
             <h2 class="text-2xl font-bold md:text-4xl">Progetto C#</h2>
-            <p>Windows Form Application </p>
-            <a class="text-rose-600 hover:underline underline-offset-8 transition duration-[650ms] hover:decoration-black" href="https://github.com/StefaDale/Progetto_Smartphone" target="_blank">Link</a>
+            <p class="mt-2 text-white/80">Windows Form Application</p>
+            <a class="mt-5 inline-block rounded-md bg-white px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-violet-100" href="https://github.com/StefaDale/Progetto_Smartphone" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
     </div>
 </body>
