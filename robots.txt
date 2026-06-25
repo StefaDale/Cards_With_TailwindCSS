@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://StefaDale.github.io/Cards_With_TailwindCSS/sitemap.xml
